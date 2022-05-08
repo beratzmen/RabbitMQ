@@ -1,4 +1,3 @@
-<h1>RabbitMQ</h1>
 <h1>Rabbitmq öğrenirken almış olduğum notları ve kod örneklerini içerir.</h1>
 
 <h2>Publisher and Subscriber Projects</h2>
@@ -19,8 +18,7 @@
 <p>
   <h4>Direct Exchange yöntemi, route keyword'üne göre aldığı mesajları kuyruklara iletmektedir. Daha sonra her bir subscriber ilgili kuyruğa bağlanarak mesajları tüketmektedir.</h4>
   
-  <i>Publisher içerisinde <b>Critical, Error, Warning, Information</b> 4 çeşit hata tipi tanımlanmıştır. Bu hata tipleri <b>logs-direct</b> exchange'ine <b>direct-queue-{}</b> hata ismiyle beraber, kuyruk ismini alarak kuyruğu oluşturur.
-  </i>
+  <i>Publisher içerisinde <b>Critical, Error, Warning, Information</b> 4 çeşit hata tipi tanımlanmıştır. Bu hata tipleri <b>logs-direct</b> exchange'ine <b>direct-queue-{}</b> hata ismiyle beraber, kuyruk ismini alarak kuyruğu oluşturur.</i>
 </p>
 
 
