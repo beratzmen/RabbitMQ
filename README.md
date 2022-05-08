@@ -4,10 +4,9 @@
 <h3>Publisher and Subscriber Projects</h3>
 <p><i>1 publisher'ın 1.5 saniye aralıklarla queue ismindeki rabbitmq kuyruğuna mesajı göndermesi ve 2 subscriber'ın sırayla bu kuyruktaki mesajları okuduğu örnek çalışma videosunu aşağıdaki play butonuna tıklayarak izleyebilirsiniz.</i></p>
 
-<br/>
-
 <h3>PublisherForFanoutExchange and SubscriberForFanoutExchange Projects</h3>
-<p><i>Publisher 1.5 saniye aralıklarla <b>logs</b> isminde Exchange'e mesajları gönderir. Kuyruk oluşturulmamıştır. Eğer Client(Subscriber) </i></p>
+<p><i>Publisher 1.5 saniye aralıklarla <b>logs</b> isminde Exchange'e mesajları gönderir. Kuyruk oluşturulmamıştır. Eğer <b>Client(Subscriber)</b> yoksa veya kuyruk oluşturup Exchange'e bağlanmazsa mesajlar silinir. SubscriberForFanoutExchange projesi içerisinde <b>randomQueueName</b> ile her client için birbirinden farklı kuyruk oluşturup exchange'e bağlanılmıştır. Subscriber'lar aynı exchangedeki aynı verileri tüketmektedir.</i></p>
+
 
 <br/>
 *Rabbitmq DOCKER üzerinde ayağa kaldırılmıştır.*
