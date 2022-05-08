@@ -7,7 +7,7 @@
 <br/>
 
 <h3>PublisherForFanoutExchange and SubscriberForFanoutExchange Projects</h3>
-<p><i>Publisher 1.5 saniye aralıklarla <mark>logs</mark> isminde Exchange'e mesajları gönderir. Kuyruk oluşturulmamıştır. Eğer Client(Subscriber) </i></p>
+<p><i>Publisher 1.5 saniye aralıklarla <b>logs</b> isminde Exchange'e mesajları gönderir. Kuyruk oluşturulmamıştır. Eğer Client(Subscriber) </i></p>
 
 <br/>
 *Rabbitmq DOCKER üzerinde ayağa kaldırılmıştır.*
