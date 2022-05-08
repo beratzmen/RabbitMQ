@@ -2,7 +2,11 @@
 <h1>Rabbitmq öğrenirken almış olduğum notları ve kod örneklerini içerir.</h1>
 
 <h2>Publisher and Subscriber Projects</h2>
-<p><i>1 publisher'ın 1.5 saniye aralıklarla queue ismindeki rabbitmq kuyruğuna mesajı göndermesi ve 2 subscriber'ın sırayla bu kuyruktaki mesajları okuduğu örnek çalışma videosunu aşağıdaki play butonuna tıklayarak izleyebilirsiniz.</i></p>
+<p>
+   <h3>Bu yöntemde publisher, mesajları doğrudan kuyruğa gönderir ve subscriber'lar bu kuyruğa bağlanarak mesajları tüketir.</h3>
+      
+   <i>1 publisher'ın 1.5 saniye aralıklarla queue ismindeki rabbitmq kuyruğuna mesajı göndermesi ve 2 subscriber'ın sırayla bu kuyruktaki mesajları okuduğu örnek çalışma videosunu aşağıdaki play butonuna tıklayarak izleyebilirsiniz.</i>
+</p>
 
 <h2>PublisherForFanoutExchange and SubscriberForFanoutExchange Projects</h2>
 <p>
