@@ -1,5 +1,5 @@
-# RabbitMQ
-**Rabbitmq öğrenirken geliştirmiş olduğum bir örnek.**
+<h2>RabbitMQ</h2>
+<h2>Rabbitmq öğrenirken almış olduğum notları ve kod örneklerini içerir.</h2>
 
 <h3>Publisher and Subscriber Projects</h3>
 <p><i>1 publisher'ın 1.5 saniye aralıklarla queue ismindeki rabbitmq kuyruğuna mesajı göndermesi ve 2 subscriber'ın sırayla bu kuyruktaki mesajları okuduğu örnek çalışma videosunu aşağıdaki play butonuna tıklayarak izleyebilirsiniz.</i></p>
