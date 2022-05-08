@@ -2,7 +2,7 @@
 **Rabbitmq öğrenirken geliştirmiş olduğum bir örnek.**
 
 <h3>Publisher and Subscriber Projects</h3>
-*1 publisher'ın 1.5 saniye aralıklarla queue ismindeki rabbitmq kuyruğuna mesajı göndermesi ve 2 subscriber'ın sırayla bu kuyruktaki mesajları okuduğu örnek çalışma videosunu aşağıdaki play butonuna tıklayarak izleyebilirsiniz.* 
+<p><i>1 publisher'ın 1.5 saniye aralıklarla queue ismindeki rabbitmq kuyruğuna mesajı göndermesi ve 2 subscriber'ın sırayla bu kuyruktaki mesajları okuduğu örnek çalışma videosunu aşağıdaki play butonuna tıklayarak izleyebilirsiniz.</i></p>* 
 
 <br/>
 *Rabbitmq DOCKER üzerinde ayağa kaldırılmıştır.*
