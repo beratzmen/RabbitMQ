@@ -21,6 +21,19 @@
   <i>Publisher içerisinde <b>Critical, Error, Warning, Information</b> 4 çeşit hata tipi tanımlanmıştır. Bu hata tipleri <b>logs-direct</b> exchange'ine <b>direct-queue-{}</b> hata ismiyle beraber, kuyruk ismini alarak kuyruğu oluşturur.</i>
 </p>
 
+<h2>PublisherForTopicExchange and SubscriberForTopicExchange Projects</h2>
+<p>
+  <h4>Direct Exchange yöntemi, daha spesifik routeKeyler oluşturmamıza yarar. Örnek routeKey: A.B.C olsun. 'A.#' dersek, kuyruğumuz A ile başlasın devamındaki karakterler umrumda değil demektir. Ya da '*.B.*' dersek, kuyruğumuzun ortasındaki karakterin B olması bizim için yeterli demektir.</h4>
+  
+  <i>Subscriber'daki örnek kodlar '*.Error.*' kuyruğuna bağlanacak şekilde ayarlanmıştır. Publisher'dan yayınlanan Critical.Error.Information şeklindeki routKey'lerden ortasında Error olan kuyruğa bağlanır ve oradaki verileri tüketir.</i>
+</p>
+
+<h2>PublisherForHeaderExchange and SubscriberForHeaderExchange Projects</h2>
+<p>
+  <h4>Bu yöntemde, kuyruğu route'lama yöntemi 'Header' bilgisiyle 'Dictionary' şeklinde gönderilmektedir.</h4>
+  
+  <i>Örnek olarak, publisher'dan header-exchange'ine route bilgisi olarak, 'format-pdf', 'shape-a4' şeklinde bir dictionary gönderilmiştir. Subscriber tarafından ise aynı isimler verilerek ilgili kuyruğa bağlanılmıştır. 'x-match' key'ine 'All' parametresi verilirse tüm değerlerin eşleşmesi gerekir(Publisher). All yerine 'Any' verilirse, eşleşen herhangi biri alınır</i>
+</p>
 
 <br/>
 *Rabbitmq DOCKER üzerinde ayağa kaldırılmıştır.*
