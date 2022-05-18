@@ -30,7 +30,7 @@
 
 <h2>PublisherForHeaderExchange and SubscriberForHeaderExchange Projects</h2>
 <p>
-  <h4>Bu yöntemde, kuyruğu route'lama yöntemi 'Header' bilgisiyle 'Dictionary' şeklinde gönderilmektedir.</h4>
+  <h4>Bu yöntemde, kuyruğu route'lama yöntemi 'Header' bilgisiyle 'Dictionary' şeklinde gönderilmektedir. Ayrıca kuyruğa mesaj 'Class' instance olarak da gönderilmektedir.</h4>
   
   <i>Örnek olarak, publisher'dan header-exchange'ine route bilgisi olarak, 'format-pdf', 'shape-a4' şeklinde bir dictionary gönderilmiştir. Subscriber tarafından ise aynı isimler verilerek ilgili kuyruğa bağlanılmıştır. 'x-match' key'ine 'All' parametresi verilirse tüm değerlerin eşleşmesi gerekir(Publisher). All yerine 'Any' verilirse, eşleşen herhangi biri alınır</i>
 </p>
