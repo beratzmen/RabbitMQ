@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublisherForHeaderExchange"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubscriberForHeaderExchange", "SubscriberForHeaderExchange\SubscriberForHeaderExchange.csproj", "{FF8395DF-ACBA-416D-8D1C-89B0A2846120}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{25A9C4FC-A9DE-46DA-8362-FB6932C29568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{25A9C4FC-A9DE-46DA-8362-FB6932C29568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatermarkWebApp", "WatermarkWebApp\WatermarkWebApp.csproj", "{508384BF-ABAF-4B26-94F1-32CDDA7FFBD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WatermarkWebApp", "WatermarkWebApp\WatermarkWebApp.csproj", "{508384BF-ABAF-4B26-94F1-32CDDA7FFBD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebExcelCreate", "WebExcelCreate\WebExcelCreate.csproj", "{3479C030-8DF1-4A44-9816-80F4D20FA196}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{508384BF-ABAF-4B26-94F1-32CDDA7FFBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{508384BF-ABAF-4B26-94F1-32CDDA7FFBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{508384BF-ABAF-4B26-94F1-32CDDA7FFBD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3479C030-8DF1-4A44-9816-80F4D20FA196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3479C030-8DF1-4A44-9816-80F4D20FA196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3479C030-8DF1-4A44-9816-80F4D20FA196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3479C030-8DF1-4A44-9816-80F4D20FA196}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
