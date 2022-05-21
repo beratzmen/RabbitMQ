@@ -14,12 +14,16 @@
   <i>Publisher 1.5 saniye aralıklarla <b>logs</b> isminde exchange mesajları gönderir. Kuyruk oluşturulmamıştır. Eğer <b>client(subscriber)</b> yoksa veya kuyruk oluşturup exchange bağlanmazsa mesajlar silinir. SubscriberForFanoutExchange projesi içerisinde <b>randomQueueName</b> ile her client için birbirinden farklı kuyruk oluşturup exchange bağlanılmıştır. Subscriber'lar aynı exchangedeki aynı verileri tüketmektedir.</i>
 </p>
 
+![exchange-fanout](https://user-images.githubusercontent.com/30552914/169219861-585e0fde-2680-4e00-866b-65f9cfce8377.png)
+
 <h2>PublisherForDirectExchange and SubscriberForDirectExchange Projects</h2>
 <p>
   <h4>Direct Exchange yöntemi, route keyword'üne göre aldığı mesajları kuyruklara iletmektedir. Daha sonra her bir subscriber ilgili kuyruğa bağlanarak mesajları tüketmektedir.</h4>
   
   <i>Publisher içerisinde <b>Critical, Error, Warning, Information</b> 4 çeşit hata tipi tanımlanmıştır. Bu hata tipleri <b>logs-direct</b> exchange'ine <b>direct-queue-{}</b> hata ismiyle beraber, kuyruk ismini alarak kuyruğu oluşturur.</i>
 </p>
+
+![exchange-direct](https://user-images.githubusercontent.com/30552914/169219972-e9f3eb6e-9566-4ac3-b89d-baf89b4fd685.png)
 
 <h2>PublisherForTopicExchange and SubscriberForTopicExchange Projects</h2>
 <p>
@@ -28,12 +32,16 @@
   <i>Subscriber'daki örnek kodlar '*.Error.*' kuyruğuna bağlanacak şekilde ayarlanmıştır. Publisher'dan yayınlanan Critical.Error.Information şeklindeki routKey'lerden ortasında Error olan kuyruğa bağlanır ve oradaki verileri tüketir.</i>
 </p>
 
+![Topic_Exchange](https://user-images.githubusercontent.com/30552914/169220093-bdfa5f01-b3db-4fdd-86ac-f623203b2100.png)
+
 <h2>PublisherForHeaderExchange and SubscriberForHeaderExchange Projects</h2>
 <p>
   <h4>Bu yöntemde, kuyruğu route'lama yöntemi 'Header' bilgisiyle 'Dictionary' şeklinde gönderilmektedir. Ayrıca kuyruğa mesaj 'Class' instance olarak da gönderilmektedir.</h4>
   
   <i>Örnek olarak, publisher'dan header-exchange'ine route bilgisi olarak, 'format-pdf', 'shape-a4' şeklinde bir dictionary gönderilmiştir. Subscriber tarafından ise aynı isimler verilerek ilgili kuyruğa bağlanılmıştır. 'x-match' key'ine 'All' parametresi verilirse tüm değerlerin eşleşmesi gerekir(Publisher). All yerine 'Any' verilirse, eşleşen herhangi biri alınır</i>
 </p>
+
+![Headers_exchange](https://user-images.githubusercontent.com/30552914/169220149-8428f63b-07dd-4488-8f8f-f51d254b92c1.png)
 
 <br/>
 *Rabbitmq DOCKER üzerinde ayağa kaldırılmıştır.*
