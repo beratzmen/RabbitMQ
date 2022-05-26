@@ -54,8 +54,8 @@ using (var scope = app.Services.CreateScope())
 
     if (!context.Users.Any())
     {
-        userManager.CreateAsync(new IdentityUser { UserName = "berat", Email = "berat@gmail.com" }, "berat").Wait();
-        userManager.CreateAsync(new IdentityUser { UserName = "berat2", Email = "berat2@gmail.com" }, "berat2").Wait();
+        userManager.CreateAsync(new IdentityUser { UserName = "deneme41", Email = "deneme41@gmail.com" }, "Deneme.41").Wait();
+        userManager.CreateAsync(new IdentityUser { UserName = "berat2", Email = "berat2@gmail.com" }, "beraT.2").Wait();
     }
 }
 //////*****************************************************************************************************//////
