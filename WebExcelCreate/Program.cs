@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using RabbitMQ.Client;
 using WebExcelCreate.Models;
+using WebExcelCreate.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,17 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
     options.User.RequireUniqueEmail = true;
 }).AddEntityFrameworkStores<Context>();
+
+/// //Rabbitmq connection stringi configten çekilerek, DI olaran eklendi.
+builder.Services.AddSingleton(sp =>
+    new ConnectionFactory()
+    {
+        Uri = new Uri(builder.Configuration.GetConnectionString("RabbitMQ")),
+        DispatchConsumersAsync = true //Asenkron metot kullanýldýðýný bildirdik
+    });
+
+builder.Services.AddSingleton<RabbitMQClientService>();
+builder.Services.AddSingleton<RabbitMQPublisher>();
 //////*****************************************************************************************************//////
 
 // Add services to the container.
