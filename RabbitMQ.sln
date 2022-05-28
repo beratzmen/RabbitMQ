@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WatermarkWebApp", "WatermarkWebApp\WatermarkWebApp.csproj", "{508384BF-ABAF-4B26-94F1-32CDDA7FFBD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebExcelCreate", "WebExcelCreate\WebExcelCreate.csproj", "{3479C030-8DF1-4A44-9816-80F4D20FA196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebExcelCreate", "WebExcelCreate\WebExcelCreate.csproj", "{3479C030-8DF1-4A44-9816-80F4D20FA196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCreateWorkerService", "FileCreateWorkerService\FileCreateWorkerService.csproj", "{1EF3A407-5BE4-4368-9209-343C164BE4CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{3479C030-8DF1-4A44-9816-80F4D20FA196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3479C030-8DF1-4A44-9816-80F4D20FA196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3479C030-8DF1-4A44-9816-80F4D20FA196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF3A407-5BE4-4368-9209-343C164BE4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF3A407-5BE4-4368-9209-343C164BE4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF3A407-5BE4-4368-9209-343C164BE4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF3A407-5BE4-4368-9209-343C164BE4CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
